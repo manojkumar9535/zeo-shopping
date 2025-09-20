@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zeo shopping cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+            
+    <button id="cart-toggle-btn" onclick="toggleCart()" class="cart-toggle-img">🛒</button>
+
+    <button class="toast" id="toast">Product added</button>
+    
+
+    <div class="left">
+        <span class="s1">
+            
+
+
+            <img class="tolly"  src="/images/Shopping Cart.png" alt="cart">  With Zeo 
+        </span> <br>
+        <input type="text" placeholder="Search products..." oninput="searchProducts()" id="search"
+            >
+
+        <div class="products" id="products">
+            
+        </div>
+    </div>
+
+
+
+    <div class="cart">
+
+        <span class="s2">
+
+            <i class="fa fa-shopping-bag" style="font-size:24px;color:red"></i>
+            Your Cart
+
+        </span>
+
+        <div class="cart-c" id="cart-c"> </div>
+
+        <p class="total" id="total">Total:$0</p>
+
+    </div>
+
+
+
+
+
+ <script src="script.js"></script>   
+</body>
+</html>
